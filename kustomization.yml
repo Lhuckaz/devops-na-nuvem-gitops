@@ -1,0 +1,9 @@
+resource: 
+  - backend/deploy.yml
+  - backend/service.yml
+  - ingress.yml
+
+images:
+  - name: 360466417573.dkr.ecr.us-west-1.amazonaws.com/devops-na-nuvem/production/backend 
+    newName: 360466417573.dkr.ecr.us-west-1.amazonaws.com/devops-na-nuvem/production/backend
+    newTag: v1.0
