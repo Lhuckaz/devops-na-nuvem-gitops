@@ -1,9 +1,11 @@
-resources: 
-  - backend/deploy.yml
-  - backend/service.yml
-  - ingress.yml
+resources:
+- backend/deploy.yml
+- backend/service.yml
+- ingress.yml
 
 images:
-  - name: 360466417573.dkr.ecr.us-west-1.amazonaws.com/devops-na-nuvem/production/backend 
-    newName: 360466417573.dkr.ecr.us-west-1.amazonaws.com/devops-na-nuvem/production/backend
-    newTag: v1.0
+- name: 360466417573.dkr.ecr.us-west-1.amazonaws.com/devops-na-nuvem/production/backend
+  newName: 360466417573.dkr.ecr.us-west-1.amazonaws.com/devops-na-nuvem/production/backend
+  newTag: 45d37227c804b9c259ba9f3551c55f180c646b9b
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
